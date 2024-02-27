@@ -50,7 +50,7 @@ echo $matrix[1][2]; // Outputs: 6<br>
     <p>Arrays in PHP are incredibly flexible and can store different types of data. They're widely used for storing
         collections of items, managing form data, and working with databases.</p>
 
-        <h3>Function of array:</h3>
+    <h3>Function of array:</h3>
     <p> Here's an example demonstrating various array functions in PHP:</p>
 
     <code>
@@ -116,10 +116,60 @@ print_r($filteredNumbers);<br>
         specific task on the given array.
     </p>
 
+    <h2>What is print_r()?</h2>
+
+    <p>print_r() is a built-in PHP function used for printing human-readable information about a variable. It is
+        particularly useful for debugging and examining the structure of arrays and objects. The function is not meant
+        for production use or formatting data for end-users; rather, it's a developer tool.</p>
+
+    <p>The basic syntax of print_r() is:</p>
+    <code>
+print_r($variable);<br></code>
+    <p>Here's a quick example:</p>
+    <code>
+$fruits = array("Apple", "Banana", "Orange");<br>
+print_r($fruits);<br>
+</code>
+    <p>Output:</p>
+
+    <code>
+Array<br>
+(<br>
+    [0] => Apple<br>
+    [1] => Banana<br>
+    [2] => Orange<br>
+)<br>
+</code>
+    <p>In the output, you can see the structure of the array, with keys and values displayed in a readable format. For
+        associative arrays, you will see both keys and values.</p>
+
+    <p>Additionally, print_r() can be used to print the details of objects:</p>
+    <code>
+class Person {<br>
+    public $name = "John";<br>
+    public $age = 30;<br>
+}<br>
+$person = new Person();<br>
+print_r($person);<br>
+</code>
+    <p>Output:</p>
+
+    <code>
+Person Object<br>
+(<br>
+    [name] => John<br>
+    [age] => 30<br>
+)<br>
+</code>
+    <p>This function is handy during the development process when you need a quick overview of the contents and
+        structure of a variable.</p>
+
+
+
     <hr>
     <a href="WP05_function.php" class="previous">Previous</a>
 
-    <a href="#" class="next">Next</a>
+    <a href="WP07_supergloble.php" class="next">Next</a>
     <hr>
 
     <?php
@@ -167,7 +217,7 @@ print_r($filteredNumbers);<br>
     echo "array functions:<br>";
 
 
-echo "<i>Array na function karvana che have</i>";
+    echo "<i>Array na function karvana che have</i>";
     ?>
 
 </body>
