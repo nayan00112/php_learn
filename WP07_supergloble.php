@@ -37,7 +37,7 @@ echo $_GET['name']; // Outputs: John<br>
 <hr>
 <a href="WP06_array.php" class="previous">Previous</a>
 
-<a href="#" class="next">Next</a>
+<a href="WP08_GET_FORM.html" class="next">Next</a>
 <hr>
 </body>
 </html>

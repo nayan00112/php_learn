@@ -212,12 +212,77 @@ Person Object<br>
         [5, 7, 9]
     ];
     echo $m2[1][2] . "<br>";
+    print_r($matrix);
     // echo $m2."<br>"; // error
     // echo $m2[1]."<br>"; //error
     echo "array functions:<br>";
 
 
     echo "<i>Array na function karvana che have</i>";
+
+    // 1.
+    $arr1 = ["4", "nayan", 34, "oky"];
+    $c =  count($arr1);
+    echo $c."<br>";
+
+    // 2
+    array_push($arr1, 3, 4);
+    print_r($arr1);
+    echo "<br>";
+
+    // 3
+    $pop = array_pop($arr1);
+    echo "popped element: ".$pop."<br>";
+    print_r($arr1);
+    echo "<br>";
+
+    // 4
+    $a1 = [3,4 ,5, "56"];
+    $b1 = [4, 3, "23", "4"];
+    $ab = array_merge($a1, $b1);
+    print_r($ab);
+    echo "<br>";
+
+    // 5 
+    $student = ["name" => "nayan", "email" => "nayan123@g.c", "address" => "92, vijaynagar"];
+    print_r($student);
+    echo "<br>";
+    $keys = array_keys($student);
+    print_r($keys);
+    echo "<br>";
+
+    // 6
+    $arrvalues = array_values($student);
+    print_r($arrvalues);
+    echo "<br>";
+
+    // 7
+    $k = "email";
+    $bool =in_array($k, $arrvalues);
+    echo $bool."<hr>"; // not displayed !!! why ?
+    echo $bool ?"True":"False";
+    echo "<br>";
+
+    // 8
+    $num = [1 ,3, 6, 8, 9];
+    $numr = array_reverse($num);
+    print_r($numr);
+    echo "<br>";
+
+    // 9
+    $n = [2, 5, 76, 7, 8];
+    $sum = array_sum($n);
+    print_r($sum);
+    echo "<br>";
+
+    // 10
+
+    $af = array_filter($n, function($v) { return $v%2==0; });
+    print_r($n);
+    echo "<br>";
+    print_r($af);
+    echo "<br>";
+
     ?>
 
 </body>
