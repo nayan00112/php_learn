@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Operator in PHP</h1>
+    <h1>3. Operator in PHP</h1>
     <p>In PHP, operators are used to perform operations on variables and values. Some types of operators in PHP include:
     </p>
 

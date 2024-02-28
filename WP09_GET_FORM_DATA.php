@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1>9. get data recive </h1>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "GET") {
         // $name = $_GET["name"];
@@ -25,7 +26,7 @@
     <hr>
     <a href="WP08_GET_FORM.html" class="previous">Previous</a>
 
-    <a href="#" class="next">Next</a>
+    <a href="WP10_POST_FORM.html" class="next">Next</a>
     <hr>
 </body>
 

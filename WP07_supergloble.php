@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-<h1>Superglobals</h1>
+<h1>7. Superglobals</h1>
 
 <p>Superglobals in PHP are special arrays that are always available and can be accessed from any scope or function within a script. They provide essential information and data related to the server, client, and other runtime details. Some commonly used superglobals include:</p>
 <ul>

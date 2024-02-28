@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<h1>Function </h1>
+<h1>5. Function </h1>
 
 <p>In PHP, functions are blocks of reusable code that perform a specific task. Here are the key aspects of functions:</p>
 

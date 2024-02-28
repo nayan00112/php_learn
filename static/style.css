@@ -21,11 +21,12 @@ code {
     display: block;
     padding: 8px;
     margin: 4px 0px;
-    text-wrap:stable;
+    text-wrap: stable;
     text-align: left;
 }
 
-.next {
+.next,
+.butt {
     display: block;
     width: 100px;
     text-align: center;

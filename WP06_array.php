@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Array</h1>
+    <h1>6. Array</h1>
     <p>In PHP, an array is a versatile data structure that stores multiple values in a single variable. Here's an
         overview of arrays in PHP:</p>
 

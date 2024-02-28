@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>PHP Variables</h1>
+    <h1>2. PHP Variables</h1>
     <hr>
     <hr>
     <p>In PHP, variables are used to store data values. Some key points about variables in PHP:</p>

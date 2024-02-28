@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Control Structure in php</h1>
+    <h1>4. Control Structure in php</h1>
     <p>Control structures in PHP are constructs that allow you to alter the flow of execution in your code. Here are
         some key control structures:</p>
     <ol>
