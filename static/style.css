@@ -72,3 +72,16 @@ code {
 li {
     margin: 4px 0px;
 }
+
+input[type="submit"] {
+    background-color: rgb(0, 132, 0);
+    color: white;
+    width: 100px;
+    text-align: center;
+    padding: 6px;
+    margin: 4px 0px;
+    margin-top:6px ;
+    border: 0px;
+    border-radius: 4px;
+
+}

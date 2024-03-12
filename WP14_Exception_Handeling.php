@@ -23,11 +23,7 @@
         <input type="submit" value="submit">
     </form>
 
-    <hr>
-    <a href="WP13_Empty_form_field_handel.php" class="previous">Previous</a>
 
-    <a href="#" class="next">Next</a>
-    <hr>
 
     <?php 
     if ($_SERVER['REQUEST_METHOD'] == "POST"){
