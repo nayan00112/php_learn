@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static\style.css">
+
 </head>
 
 <body>
@@ -15,7 +17,7 @@
     </form>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
+
         if (!empty($_POST["name"])) {
             echo $_POST["name"] . "<br>";
         } else {
@@ -23,6 +25,11 @@
         }
     }
     ?>
+    <hr>
+    <a href="WP12_FILE_HTML.html" class="previous">Previous</a>
+
+    <a href="WP14_Exception_Handeling.php" class="next">Next</a>
+    <hr>
 </body>
 
 </html>
