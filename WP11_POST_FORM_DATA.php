@@ -22,7 +22,7 @@
     <hr>
     <a href="WP10_POST_FORM.html" class="previous">Previous</a>
 
-    <a href="#" class="next">Next</a>
+    <a href="WP12_FILE_HTML.html" class="next">Next</a>
     <hr>
 </body>
 

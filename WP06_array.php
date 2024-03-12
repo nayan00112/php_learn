@@ -59,7 +59,7 @@ $numbers = array(1, 2, 3, 4, 5);<br>
 <br>
 // 1. count - Count the number of elements in an array<br>
 $count = count($numbers);<br>
-echo "Number of elements: $count<br>";<br>
+echo "Number of elements: $count &lt;br&gt;";<br>
 <br>
 // 2. array_push - Push one or more elements onto the end of an array<br>
 array_push($numbers, 6, 7);<br>
@@ -68,7 +68,7 @@ echo "<br>";<br>
 <br>
 // 3. array_pop - Pop the element off the end of array<br>
 $popped = array_pop($numbers);<br>
-echo "Popped element: $popped<br>";<br>
+echo "Popped element: $popped&lt;br&gt;";<br>
 <br>
 // 4. array_merge - Merge one or more arrays<br>
 $colors1 = array("red", "green");<br>
@@ -90,19 +90,19 @@ echo "<br>";<br>
 // 7. in_array - Checks if a value exists in an array<br>
 $checkValue = 3;<br>
 if (in_array($checkValue, $numbers)) {<br>
-    echo "$checkValue exists in the array<br>";<br>
+    echo "$checkValue exists in the array&lt;br&gt;";<br>
 } else {<br>
-    echo "$checkValue does not exist in the array<br>";<br>
+    echo "$checkValue does not exist in the array&lt;br&gt;";<br>
 }<br>
 <br>
 // 8. array_reverse - Return an array with elements in reverse order<br>
 $reversedNumbers = array_reverse($numbers);<br>
 print_r($reversedNumbers);<br>
-echo "<br>";<br>
+echo "&lt;br&gt;";<br>
 <br>
 // 9. array_sum - Calculate the sum of values in an array<br>
 $sum = array_sum($numbers);<br>
-echo "Sum of elements: $sum<br>";<br>
+echo "Sum of elements: $sum&lt;br&gt;";<br>
 <br>
 // 10. array_filter - Filters elements of an array using a callback function<br>
 $filteredNumbers = array_filter($numbers, function ($value) {<br>

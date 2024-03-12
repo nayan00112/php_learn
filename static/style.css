@@ -10,21 +10,27 @@ h3 {
 }
 
 body {
-    margin:5px;
+    margin: 5px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 20px rgb(185, 185, 185);
 }
 
 code {
+    overflow: auto;
+    white-space: nowrap;
     font-family: 'Courier New', Courier, monospace;
-    border: 1px solid gray;
+    border: 0px solid #e3e3e3;
+    background-color: #f8f9fa;
+    white-space: nowrap;
     border-radius: 5px;
     display: block;
     padding: 8px;
     margin: 4px 0px;
     text-wrap: stable;
     text-align: left;
+
+
 }
 
 .next,

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Apply styles to body */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        /* Style headings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #333;
+        }
+
+        /* Style paragraphs */
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Style links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style lists */
+        ul,
+        ol {
+            margin-bottom: 15px;
+        }
+
+        /* Style code blocks */
+        pre {
+            background-color: #f8f9fa;
+            overflow: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Style blockquotes */
+        blockquote {
+            border-left: 2px solid #007bff;
+          
+          
+        }
+
+        /* Style tables */
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Add more styles as needed */
+        /* Style for syntax highlighting classes */
+        .codehilite {
+            background-color: #f8f9fa;
+
+            padding: 10px;
+            overflow: auto;
+        }
+
+        .codehilite code {
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Styles for specific syntax highlighting classes */
+        .k {
+            color: #008000;
+            /* Green for keywords */
+        }
+
+        .p {
+            color: #0000ff;
+            /* Blue for punctuation */
+        }
+
+        .si {
+            color: #a31515;
+            /* Dark red for strings */
+        }
+
+        /* Add more styles for other classes as needed */
+    </style>
+</head>
+
+<body>
+    <form action="WP12_FILE.php" method="post" enctype="multipart/form-data">
+        <label for="f">File:</label>
+        <input type="file" name="file" id="f">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <hr>
+
+    <p>Certainly! Uploading files using PHP involves creating an HTML form with the appropriate file input and a PHP
+        script to handle the uploaded file. Here\'s a simple example:</p><br><br>
+    <p><strong>HTML Form (upload_form.html):</strong></p><br><br>
+    <div class="codehilite"><br>
+        <pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span><br><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span><br><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span><br>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span><br>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span><br>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>File Upload Form<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span><br><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span><br><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span><br><br>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>File Upload Form<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span><br><br>    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;upload.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span><br>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;file&quot;</span><span class="p">&gt;</span>Choose a file:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span><br>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">required</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span><br><br>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Upload&quot;</span><span class="p">&gt;</span><br>    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span><br><br><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span><br><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span><br></code></pre>
+        <br>
+    </div><br><br>
+    <p><strong>PHP Script to Handle File Upload (upload.php):</strong></p><br><br>
+    <div class="codehilite"><br>
+        <pre><span></span><code><span class="cp">&lt;?php</span><br><span class="c1">// Check if the form was submitted</span><br><span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&quot;REQUEST_METHOD&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;POST&quot;</span><span class="p">)</span> <span class="p">{</span><br><br>    <span class="c1">// Check if there is a file uploaded</span><br>    <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]))</span> <span class="p">{</span><br>        <span class="nv">$file</span> <span class="o">=</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">];</span><br><br>        <span class="c1">// File details</span><br>        <span class="nv">$fileName</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">];</span><br>        <span class="nv">$fileTmpName</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s2">&quot;tmp_name&quot;</span><span class="p">];</span><br>        <span class="nv">$fileSize</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s2">&quot;size&quot;</span><span class="p">];</span><br>        <span class="nv">$fileError</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s2">&quot;error&quot;</span><span class="p">];</span><br>        <span class="nv">$fileType</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">];</span><br><br>        <span class="c1">// Specify the target directory for uploads</span><br>        <span class="nv">$targetDirectory</span> <span class="o">=</span> <span class="s2">&quot;uploads/&quot;</span><span class="p">;</span><br><br>        <span class="c1">// Move the uploaded file to the target directory</span><br>        <span class="nv">$targetPath</span> <span class="o">=</span> <span class="nv">$targetDirectory</span> <span class="o">.</span> <span class="nv">$fileName</span><span class="p">;</span><br>        <span class="nb">move_uploaded_file</span><span class="p">(</span><span class="nv">$fileTmpName</span><span class="p">,</span> <span class="nv">$targetPath</span><span class="p">);</span><br><br>        <span class="k">echo</span> <span class="s2">&quot;File uploaded successfully. Path: </span><span class="si">$targetPath</span><span class="s2">&quot;</span><span class="p">;</span><br>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span><br>        <span class="k">echo</span> <span class="s2">&quot;No file uploaded.&quot;</span><span class="p">;</span><br>    <span class="p">}</span><br><br><span class="p">}</span> <span class="k">else</span> <span class="p">{</span><br>    <span class="k">echo</span> <span class="s2">&quot;Invalid request.&quot;</span><span class="p">;</span><br><span class="p">}</span><br><span class="cp">?&gt;</span><br></code></pre>
+        <br>
+    </div><br><br>
+    <p>Explanation:</p><br><br>
+    <ol><br>
+        <li>
+            <p><strong>HTML Form:</strong></p><br><br>
+            <ul><br>
+                <li>The form uses the <code>enctype="multipart/form-data"</code> attribute, which is required for file
+                    uploads.</li><br>
+                <li>The file input is named "file."</li><br>
+            </ul>
+        </li><br>
+        <li>
+            <p><strong>PHP Script:</strong></p><br><br>
+            <ul><br>
+                <li>The script checks if the form was submitted using the POST method.</li><br>
+                <li>It checks if a file was uploaded using <code>$_FILES</code>.</li><br>
+                <li>File details such as name, temporary name, size, error, and type are extracted from
+                    <code>$_FILES</code>.</li><br>
+                <li>The target directory for uploads is specified (in this example, it\'s a folder named "uploads").
+                </li><br>
+                <li>The <code>move_uploaded_file()</code> function moves the uploaded file to the specified directory.
+                </li><br>
+                <li>The script echoes a success message with the file path.</li><br>
+            </ul>
+        </li><br>
+    </ol><br><br>
+    <p>Make sure to create a folder named "uploads" in the same directory as your PHP scripts to store the uploaded
+        files. Adjust the code according to your specific needs.</p><br>
+</body>
+
+</html>

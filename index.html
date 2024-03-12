@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="static\style.css">
+    <script src="static/code_print_script.js"></script>
+    <script src="static/menu.js"></script>
 </head>
-<body>
+<body onload="initCode()">
+    <button  onclick="menubut()">Menu</button>
+    <div id="but_menu"></div>
     <h1>Welcome</h1>
     <p>Welcome to learn php!</p>
     <a href="WP01_Welcome.php" class="next">Learn</a>
+
+    <!-- <button onclick="code_print()" id="print_but">show code of this page</button>/ -->
 </body>
 </html>

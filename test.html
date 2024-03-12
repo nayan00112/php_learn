@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Button</title>
+</head>
+<body>
+
+<script>
+    // Creating a new button element
+    var newButton = document.createElement("button");
+
+    // Adding text to the button
+    newButton.innerHTML = "Click me";
+
+    // Adding an event listener to the button
+    newButton.addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+
+    // Appending the button to the body of the document
+    document.body.appendChild(newButton);
+</script>
+
+</body>
+</html>
