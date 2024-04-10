@@ -17,6 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if (isset($_FILES["file"])){
         $f = $_FILES["file"];
 
+        echo "<hr>";
+        print_r($f);
+        echo "<hr>";
+
         $filename= $f["name"];
         $fileTempName = $f["tmp_name"];
         $fileSize = $f["size"];

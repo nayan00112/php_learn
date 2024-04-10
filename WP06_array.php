@@ -220,17 +220,17 @@ Person Object<br>
 
     echo "<i>Array na function karvana che have</i>";
 
-    // 1.
+    echo "1"."<hr>";
     $arr1 = ["4", "nayan", 34, "oky"];
     $c =  count($arr1);
     echo $c."<br>";
 
-    // 2
+    echo "2"."<hr>";
     array_push($arr1, 3, 4);
     print_r($arr1);
     echo "<br>";
 
-    // 3
+    echo "3"."<hr>";
     $pop = array_pop($arr1);
     echo "popped element: ".$pop."<br>";
     print_r($arr1);

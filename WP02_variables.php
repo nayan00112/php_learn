@@ -39,6 +39,13 @@ $isStudent = true; // Assigning a boolean value to $isStudent<br>
     $email = "nayan1@g.c";
 
     echo "Name: " . $name . "Email: " . $email . "";
+
+    echo "<hr>";
+    $x = "Hello";
+    var_dump($x);
+    echo "<br>";
+    echo "for view type";
+    echo "<hr>";
     ?>
     <a href="WP01_Welcome.php" class="previous">Previous</a>
 
