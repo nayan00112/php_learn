@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Note</title>
+    <style>
+        div {
+            width: 60%;
+            background-color: #5356FF;
+            color: #f3f3ff;
+            margin: auto;
+            padding: 1rem;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        div h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        input[type='text'],
+        textarea {
+            width: 100%;
+            border-radius: calc(1rem - 10px);
+            border: 0px;
+            height: 10rem;
+        }
+
+        input[type='text'] {
+            height: 2rem;
+
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            padding: 4px 0px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #67C6E3;
+            color: #5356FF;
+            margin: 1rem 0px;
+            border: 0px;
+            padding: 0.5rem 0px;
+            border-radius: calc(1rem - 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Add Note</h1>
+        <form action="add_data.php" method="post">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+
+            <label for="desc">Description</label>
+            <textarea name="desc" id="desc" required></textarea>
+
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</body>
+
+</html>
